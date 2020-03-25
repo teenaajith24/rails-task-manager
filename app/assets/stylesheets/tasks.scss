@@ -1,0 +1,32 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1{
+  margin-left: 30px;
+}
+.container {
+ display: flex;
+ margin-left: 30px;
+}
+
+.details-box{
+  margin-top: 50px;
+  margin-left: 20px;
+  background-color: #cccccc;
+  border: 0.5px solid #434E52;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.backlist{
+  margin-top: 30px;
+}
+
+.buttoncreate{
+  background-color: blue;
+  color: white;
+}
+
+.form_container{
+  margin-left: 30px;
+}

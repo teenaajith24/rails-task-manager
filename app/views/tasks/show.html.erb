@@ -1,0 +1,22 @@
+<form action=" " method="get">
+<div>
+  <h2> <%= @task.title %></h2>
+  <button type="submit" class="btn btn-secondary">Edit this task</button>
+</div>
+</form>
+
+<div class="details-box">
+  <%= @task.details%>
+</div>
+
+
+<% if @task.completed == true %>
+  <input type="checkbox" id="status" name="vehicle1" value="Bike" checked>
+  <label for="status"> This task is completed</label><br>
+<% else %>
+  <input type="checkbox" id="status" name="vehicle1" value="Bike">
+  <label for="status"> This task is not completed yet</label><br>
+<% end %>
+<br><br> <br><br>
+
+<%= link_to "Back to list", tasks_path%>

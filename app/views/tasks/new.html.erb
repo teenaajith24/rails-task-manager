@@ -1,0 +1,23 @@
+<h2>New Task</h2>
+
+<form action="/tasks" method="post" class="form_container">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <div class="form-group">
+  <label for="title">Title:</label>
+  <input type="text" name="task[title]" id="title" class="form-control">
+  </div>
+
+  <div class="form-group">
+  <label for="details">Details:</label>
+  <input type="text" name="task[details]" id="details" class="form-control">
+  </div>
+  <div>  <input type="submit" class="buttoncreate" value="Create task"></div>
+
+  <div class="backlist">
+   <%= link_to "Back to List", tasks_path%>
+  </div>
+
+</form>
+
+
+

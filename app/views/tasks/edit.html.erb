@@ -1,0 +1,21 @@
+<form action="/tasks" method="patch">
+  <h2>Edit task</h2>
+  <div class="form-group">
+    <label for="enterTitle">Title</label>
+    <input type="text" class="form-control" id="enterTitle" name="task[title]" value=<%= @task.title %>>
+
+  </div>
+  <div class="form-group">
+    <label for="enterDetails">Details</label>
+    <input type="text" class="form-control" id="enterDetails" name="task[details]" value=<%= @task.details %>>
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Completed</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Update Task</button>
+</form>
+
+<div>
+  <%= link_to "Back to List", tasks_path%>
+</div>
